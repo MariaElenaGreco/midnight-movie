@@ -114,6 +114,17 @@ main{
     position: relative;
 }
 
+.container__slider_chisiamo{
+    background-image: url(../img/chi_siamo/cefbeea4-b83a-4527-bbee-f826613f986e.jpg);
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
+    
+    height: 489px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .slider__text{
     width: 100%;
     text-align: center;

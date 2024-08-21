@@ -55,7 +55,7 @@ nav{
     font-size: 16px;
     flex-direction: column;
 }
-.navbar__list__item{
+.navbar_list_item{
     margin: 0 19px;
 }
 
@@ -81,6 +81,17 @@ main{
     position: relative;
 }
 
+.container_slider_midCafe{
+    background-image: url(../img/mid_cafe/1_mid_cafe.jpg);
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
+    
+    height: 489px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .slider__text{
     width: 100%;
     text-align: center;
@@ -96,7 +107,7 @@ main{
 .container{
     display: flex;
     justify-content: center;
-    margin: 0px 10% 50px;
+    margin: 0 15px;
    /*  width: 100%; */
     justify-content: flex-start;
 }
@@ -109,6 +120,7 @@ main{
     /* margin-top: calc(-1* var(--bs-gutter-y));
     margin-right: calc(-.5* var(--bs-gutter-x));
     margin-left: calc(-.5* var(--bs-gutter-x)); */
+    flex-direction: column;
 }
 .col4 {
     flex: 0 0 auto;
@@ -116,7 +128,7 @@ main{
 }
 .col6{
     flex: 0 0 auto;
-    width: 50%;
+    width: 100%;
 }
 .col12{
     flex: 0 0 auto;
@@ -159,6 +171,10 @@ main{
 }
 .mainDescription{
     width: 50%;
+}
+
+h1,h3{
+    color: #C9B2FF;
 }
 
 h2 {
@@ -228,6 +244,27 @@ figcaption a {
   .infoFilm img{
     width: 60%;
   }
+
+  .snack{
+    margin-bottom: 50px;
+  }
+  .snack img{
+    
+        width: 160px;
+       /*  height: 100%; */
+        object-fit: cover;      
+  }
+  .snack h3{
+    padding-left: 20px;
+    margin: 0;
+  }
+  .snack ul{
+    margin-right: 10px;
+  }
+
+  .col6 p{
+    margin: 0;
+  }
   
 
 
@@ -270,8 +307,17 @@ footer .navbar__list a{
 }
 
 @media only screen and (min-width: 770px) {
+
+    .row{
+        flex-direction: row;
+    }
     .container {
-        max-width: 720px;;
+        max-width: 720px;
+        margin: 0px 10% 50px;
+    }
+    .col6{
+        flex: 0 0 auto;
+        width: 50%;
     }
     .navbar__list{
         
@@ -285,11 +331,15 @@ footer .navbar__list a{
        
     }
     
+    
 
 }
 
 @media only screen and (min-width: 992px) {
-
+    .snack img{
+    
+        width: 200px;
+    }
     .container {
         max-width: 960px;
     }
@@ -297,6 +347,7 @@ footer .navbar__list a{
         top: 90%;
         left: 30%;
     }
+    
 }
 
 @media only screen and (min-width: 1200px) {
@@ -331,7 +382,7 @@ footer .navbar__list a{
 
 
 
-/*FONT FAMILY IMPORT*/
+
 
 @font-face {
     font-family: 'Inter';

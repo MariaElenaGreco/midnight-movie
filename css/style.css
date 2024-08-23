@@ -81,41 +81,8 @@ main{
     position: relative;
 }
 
-.container__slider_progetto{
-    background-image: url(../img/il_progetto/1_progetto.jpeg);
-    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
-    
-    height: 489px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
 .container_slider_midCafe{
     background-image: url(../img/mid_cafe/1_mid_cafe.jpg);
-    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
-    
-    height: 489px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.container__slider_info{
-    background-image: url(../img/info/1_info.jpeg);
-    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
-    
-    height: 489px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.container__slider_chisiamo{
-    background-image: url(../img/chi_siamo/cefbeea4-b83a-4527-bbee-f826613f986e.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -213,7 +180,7 @@ h1,h3{
 h2 {
 
     position: relative;
-    width: 93%;
+    width: 500px;
     color: #A1BFFF;
     }
     
@@ -222,25 +189,56 @@ h2 {
     content: "";
     height: 3px;
     background-color: #A1BFFF;
-    width: 90%;
-    margin-left: -405px;
+    width: 100%;
+    right: 0px;
     top: 50px;
     }
 
 
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:16px
+} */
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:16px
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px
 }
+
+
+
+
 figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
+
 
 figcaption a {
     color: #fff;
+}
+figure a :hover {
+    color: #A1BFFF;
+}
+
+figure img {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+figure:hover img {
+    transform: scale(1.1);
+    opacity: 0.5;
+    
+}
+figure:hover figcaption a{
+    opacity: 1;
+    color: #A1BFFF;
+    
 }
 
 .breadcrumb {
@@ -278,18 +276,31 @@ figcaption a {
     width: 60%;
   }
 
+  .infoIndex img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+
+  .borderIndex p{
+    border: 3px solid #A1BFFF;    
+    padding: 15px 0 0 15px;
+    
+  }
+
   .snack{
     margin-bottom: 50px;
   }
   .snack img{
     
-        width: 160px;
-       /*  height: 100%; */
-        object-fit: cover;      
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;     
   }
-  .snack h3{
+  .snack h4{
     padding-left: 20px;
-    margin: 0;
+    margin-top: 10px;
   }
   .snack ul{
     margin-right: 10px;
@@ -298,7 +309,9 @@ figcaption a {
   .col6 p{
     margin: 0;
   }
-  
+  .infoText{
+    margin-top: 50px !important;
+}
 
 
 
@@ -328,11 +341,10 @@ footer .navbar__list a{
         max-width: 540px;
     }
   
-    .grid {
+    /* .grid {
         grid-template-columns: repeat(3, 1fr);
         width: auto;
-    }
-
+    } */
     .navbar__list{
         flex-direction: row;
     }
@@ -346,7 +358,7 @@ footer .navbar__list a{
     }
     .container {
         max-width: 720px;
-        margin: 0px 10% 50px;
+        margin: 25px 10% 25px;
     }
     .col6{
         flex: 0 0 auto;
@@ -364,15 +376,19 @@ footer .navbar__list a{
        
     }
     
-    
+    .snack h4{
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      .borderIndex p{        
+        height: 310px;
+      }
 
 }
 
 @media only screen and (min-width: 992px) {
-    .snack img{
     
-        width: 200px;
-    }
     .container {
         max-width: 960px;
     }
@@ -380,6 +396,8 @@ footer .navbar__list a{
         top: 90%;
         left: 30%;
     }
+
+    
     
 }
 
@@ -442,4 +460,15 @@ footer .navbar__list a{
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+}
+
+.container__slider_timburton{
+    background-image: url(../img/dentro_la_mente_di_tim_burton/1_tim_burton.jpg);
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
+    
+    height: 489px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }

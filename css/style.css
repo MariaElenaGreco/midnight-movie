@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6{
 a{
     text-decoration: none;
 }
-a:hover {
+a :hover {
     text-decoration: underline;
 }
 nav{
@@ -55,7 +55,7 @@ nav{
     font-size: 16px;
     flex-direction: column;
 }
-.navbar_list_item{
+.navbar__list__item{
     margin: 0 19px;
 }
 
@@ -81,7 +81,7 @@ main{
     position: relative;
 }
 
-.container_slider_midCafe{
+.container__slider__midCafe{
     background-image: url(../img/mid_cafe/1_mid_cafe.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
@@ -90,6 +90,50 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.container__slider_progetto{
+    background-image: url(../img/index/9_progetto.jpeg);
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
+    
+    height: 489px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container__slider_timburton{
+    background-image: url(../img/dentro_la_mente_di_tim_burton/1_tim_burton.jpg);
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
+    
+    height: 489px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container__slider_chisiamo{
+    background-image: url(../img/chi_siamo/cefbeea4-b83a-4527-bbee-f826613f986e.jpg);
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
+    
+    height: 489px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container__slider_info{
+    background-image: url(../img/info/1_info.jpeg);
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
+    
+    height: 489px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .slider__text{
@@ -121,6 +165,11 @@ main{
     margin-right: calc(-.5* var(--bs-gutter-x));
     margin-left: calc(-.5* var(--bs-gutter-x)); */
     flex-direction: column;
+    width: 100%;
+}
+.col3 {
+    flex: 0 0 auto;
+    width: 25%;
 }
 .col4 {
     flex: 0 0 auto;
@@ -128,7 +177,15 @@ main{
 }
 .col6{
     flex: 0 0 auto;
-    width: 100%;
+    width: 50%;
+}
+.col8 {
+    flex: 0 0 auto;
+    width: 66.66666666%;
+}
+.col9{
+    flex: 0 0 auto;
+    width: 90%;
 }
 .col12{
     flex: 0 0 auto;
@@ -176,7 +233,12 @@ main{
 h1,h3{
     color: #C9B2FF;
 }
-
+a > div > .borderIndex > p{
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+}
 h2 {
 
     position: relative;
@@ -273,7 +335,7 @@ figure:hover figcaption a{
     pointer-events: none; /* Disabilita il link per la pagina corrente */
   }
   .infoFilm img{
-    width: 60%;
+    width: 80%;
   }
 
   .infoIndex img{
@@ -282,10 +344,22 @@ figure:hover figcaption a{
     object-fit: cover;
   }
 
+  .chisiamo img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    object-position: center;
+
+  }
+
   .borderIndex p{
     border: 3px solid #A1BFFF;    
-    padding: 15px 0 0 15px;
-    
+    padding: 15px 0 0 15px;    
+  }
+  .borderChiSiamo{
+    border: 3px solid #A1BFFF;
+    padding: 0 0 0 15px;
+    height: 326px;
   }
 
   .snack{
@@ -306,13 +380,31 @@ figure:hover figcaption a{
     margin-right: 10px;
   }
 
+  .col3 p{
+    margin: 0;
+  }
+  .col4 p{
+    margin: 0;
+  }
   .col6 p{
+    margin: 0;
+  }
+  .col8 p{
+    margin: 0;
+  }
+  .col9 p{
     margin: 0;
   }
   .infoText{
     margin-top: 50px !important;
 }
 
+.batman img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
 
 
 footer {
@@ -348,6 +440,18 @@ footer .navbar__list a{
     .navbar__list{
         flex-direction: row;
     }
+    .container__slider_timburton >div>div> .slider__text{
+        left: 50%;
+        top: 70%;
+    }
+    .container__slider_chisiamo > .slider__text{
+        left: 30%; 
+        top: 86%;
+    }
+    .container__slider_info > .slider__text{
+        left: 30%; 
+        top: 86%;
+    }
 
 }
 
@@ -372,7 +476,7 @@ footer .navbar__list a{
     }
 
     .slider__text{        
-        top: 90%;
+        top: 80%;
        
     }
     
@@ -384,7 +488,10 @@ footer .navbar__list a{
       .borderIndex p{        
         height: 310px;
       }
-
+      .col9{
+        flex: 0 0 auto;
+        width: 65%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -396,7 +503,13 @@ footer .navbar__list a{
         top: 90%;
         left: 30%;
     }
-
+    .container__slider_progetto > .slider__text{
+        left: 45%; 
+    }
+    .container__slider_info > .slider__text{
+        left: 45%;
+    }
+    
     
     
 }
@@ -410,9 +523,30 @@ footer .navbar__list a{
         top: 90%;
         left: 30%;
     }
+    .container__slider_progetto > .slider__text{
+        left: 40%; 
+    }
+    .container__slider_timburton >div>div> .slider__text{
+        left: 50%;
+        top: 75%;
+    }
+
+    .container__slider_chisiamo > .slider__text{
+        left: 20%; 
+        top: 75%;
+    }
+    .container__slider_info > .slider__text{
+        left: 20%; 
+        top: 75%;
+    }
+
 }
 
 @media only screen and (min-width: 1400px) {
+    .col9{
+        flex: 0 0 auto;
+        width: 73%;
+    }
     .container {
         max-width: 1320px;;
     }
@@ -420,13 +554,25 @@ footer .navbar__list a{
         top: 90%;
         left: 30%;
     }
+    .container__slider_timburton >div>div> .slider__text{
+        left: 46%;
+        
+    }
 
 }
 
 @media only screen and (min-width: 1600px) {
     .slider__text{        
-        top: 90%;
+        top: 80%;
         left: 25%;
+    }
+
+    .container__slider_progetto > .slider__text{
+        left: 35%; 
+    }
+    .container__slider_timburton >div>div> .slider__text{
+        left: 45%; 
+        
     }
     
 }
@@ -462,13 +608,5 @@ footer .navbar__list a{
     font-display: swap;
 }
 
-.container__slider_timburton{
-    background-image: url(../img/dentro_la_mente_di_tim_burton/1_tim_burton.jpg);
-    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
-    
-    height: 489px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
+
+

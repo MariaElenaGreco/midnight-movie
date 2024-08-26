@@ -55,7 +55,7 @@ nav{
     font-size: 16px;
     flex-direction: column;
 }
-.navbar__list__item{
+.navbar_list_item{
     margin: 0 19px;
 }
 
@@ -81,7 +81,7 @@ main{
     position: relative;
 }
 
-.container__slider__midCafe{
+.container_slider_midCafe{
     background-image: url(../img/mid_cafe/1_mid_cafe.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
@@ -175,17 +175,31 @@ main{
     flex: 0 0 auto;
     width: 33.33333333%;
 }
+.col5{
+    flex: 0 0 auto;
+    width: 41.67%;
+    
+}
 .col6{
     flex: 0 0 auto;
     width: 50%;
+}
+.col7 {
+    width: 58.33%;
+    flex: 0 0 auto;
 }
 .col8 {
     flex: 0 0 auto;
     width: 66.66666666%;
 }
-.col9{
+.col9 {
+    width: 75%;
     flex: 0 0 auto;
-    width: 90%;
+}
+
+.col10 {
+    width: 83.33%; /* 10 colonne su 12 */
+    flex: 0 0 auto;
 }
 .col12{
     flex: 0 0 auto;
@@ -242,7 +256,8 @@ a:hover{
 h2 {
 
     position: relative;
-    width: 500px;
+    /* width: 500px; */
+    width: 100%;
     color: #A1BFFF;
     }
     
@@ -422,6 +437,10 @@ footer .navbar__list a{
 
 
 
+.purple {
+    color: #C9B2FF;
+    font-weight: bold;
+}
 
 
 
@@ -432,7 +451,9 @@ footer .navbar__list a{
     .container {
         max-width: 540px;
     }
-  
+    .row{
+            flex-direction: row;
+        }
     /* .grid {
         grid-template-columns: repeat(3, 1fr);
         width: auto;
@@ -440,34 +461,19 @@ footer .navbar__list a{
     .navbar__list{
         flex-direction: row;
     }
-    .container__slider_timburton >div>div> .slider__text{
-        left: 50%;
-        top: 70%;
-    }
-    .container__slider_chisiamo > .slider__text{
-        left: 30%; 
-        top: 86%;
-    }
-    .container__slider_info > .slider__text{
-        left: 30%; 
-        top: 86%;
-    }
+    
+   
 
 }
 
 @media only screen and (min-width: 770px) {
 
-    .row{
-        flex-direction: row;
-    }
+    
     .container {
         max-width: 720px;
         margin: 25px 10% 25px;
     }
-    .col6{
-        flex: 0 0 auto;
-        width: 50%;
-    }
+    
     .navbar__list{
         
         display: flex;
@@ -488,10 +494,8 @@ footer .navbar__list a{
       .borderIndex p{        
         height: 310px;
       }
-      .col9{
-        flex: 0 0 auto;
-        width: 65%;
-    }
+      
+    
 }
 
 @media only screen and (min-width: 992px) {
@@ -502,14 +506,8 @@ footer .navbar__list a{
     .slider__text{        
         top: 90%;
         left: 30%;
-    }
-    .container__slider_progetto > .slider__text{
-        left: 45%; 
-    }
-    .container__slider_info > .slider__text{
-        left: 45%;
-    }
-    
+    }   
+   
     
     
 }
@@ -522,42 +520,21 @@ footer .navbar__list a{
     .slider__text{        
         top: 90%;
         left: 30%;
-    }
-    .container__slider_progetto > .slider__text{
-        left: 40%; 
-    }
-    .container__slider_timburton >div>div> .slider__text{
-        left: 50%;
-        top: 75%;
-    }
-
-    .container__slider_chisiamo > .slider__text{
-        left: 20%; 
-        top: 75%;
-    }
-    .container__slider_info > .slider__text{
-        left: 20%; 
-        top: 75%;
-    }
+    }   
+    
 
 }
 
 @media only screen and (min-width: 1400px) {
-    .col9{
-        flex: 0 0 auto;
-        width: 73%;
-    }
     .container {
         max-width: 1320px;;
     }
     .slider__text{        
         top: 90%;
         left: 30%;
-    }
-    .container__slider_timburton >div>div> .slider__text{
-        left: 46%;
-        
-    }
+    } 
+    
+   
 
 }
 
@@ -565,15 +542,7 @@ footer .navbar__list a{
     .slider__text{        
         top: 80%;
         left: 25%;
-    }
-
-    .container__slider_progetto > .slider__text{
-        left: 35%; 
-    }
-    .container__slider_timburton >div>div> .slider__text{
-        left: 45%; 
-        
-    }
+    }   
     
 }
 
@@ -607,7 +576,3 @@ footer .navbar__list a{
     font-style: normal;
     font-display: swap;
 }
-.purple {
-    color: #C9B2FF;
-}
-

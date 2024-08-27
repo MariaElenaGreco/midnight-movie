@@ -71,7 +71,7 @@ main{
 }
 
 .container__slider{
-    background-image: url(../img/index/1_home.jpeg);
+    background-image: url(../img/slide/index_slide.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -82,7 +82,7 @@ main{
 }
 
 .container__slider__midCafe{
-    background-image: url(../img/mid_cafe/1_mid_cafe.jpg);
+    background-image: url(../img/slide/mid_cafe_slide.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);    
     height: 489px;
     background-position: center;
@@ -92,7 +92,7 @@ main{
 }
 
 .container__slider_progetto{
-    background-image: url(../img/index/9_progetto.jpeg);
+    background-image: url(../img/slide/il_progetto_slide.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -103,7 +103,7 @@ main{
 }
 
 .container__slider_timburton{
-    background-image: url(../img/dentro_la_mente_di_tim_burton/1_tim_burton.jpg);
+    background-image: url(../img/slide/tim_burton_slide.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -114,7 +114,7 @@ main{
 }
 
 .container__slider_chisiamo{
-    background-image: url(../img/chi_siamo/cefbeea4-b83a-4527-bbee-f826613f986e.jpg);
+    background-image: url(../img/slide/chi_siamo_slide.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -125,7 +125,7 @@ main{
 }
 
 .container__slider_info{
-    background-image: url(../img/info/1_info.jpeg);
+    background-image: url(../img/slide/info_slide.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);  
     height: 489px;
     background-position: center;

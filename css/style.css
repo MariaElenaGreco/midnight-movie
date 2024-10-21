@@ -141,7 +141,7 @@ main{
     text-align: left;
     position: absolute;
     bottom: 0px;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, 10%);
     color: #C9B2FF;
     font-weight: bold;
@@ -161,11 +161,11 @@ main{
     /* --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0; */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     /* margin-top: calc(-1* var(--bs-gutter-y));
     margin-right: calc(-.5* var(--bs-gutter-x));
     margin-left: calc(-.5* var(--bs-gutter-x)); */
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
 .col3 {
@@ -184,7 +184,7 @@ main{
 .col6{
     flex: 0 0 auto;
     width: 100%;
-    min-width: 207px;
+    min-width: 220px;
 }
 .col7 {
     width: 58.33%;
@@ -211,24 +211,10 @@ main{
 .col12{
     flex: 0 0 auto;
     width: 100%;
+    margin-top: 0%;
 }
 .day{
     color: #C9B2FF; 
-}
-.hours{
-    display: block;
-    background-color: #A1BFFF;
-    height: 53px;
-    color: #000;
-    margin: 10px;
-    border-radius: 12px;
-    width: 124px;
-}
-
-.containerHours{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .center {
     display: flex;
@@ -264,7 +250,6 @@ main{
     flex-direction: column;
     align-items:flex-start ;
   }
-
 
 .container-nav {
     display: flex;
@@ -315,7 +300,7 @@ h2 {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 16px
+    gap: 16px;
 }
 
 
@@ -331,6 +316,7 @@ figure img {
 
 figcaption a {
     color: #fff;
+
 }
 figure a :hover {
     color: #A1BFFF;
@@ -385,6 +371,13 @@ figure:hover figcaption a{
   }
   .infoFilm img{
     width: 100%;
+    margin-left: 150px;
+  }
+
+  .Film img{
+    width: 421px;
+    height: 563px;
+    margin-left: 50px;
   }
 
   .infoIndex img{
@@ -414,8 +407,8 @@ figure:hover figcaption a{
   .snack{
     margin-bottom: 50px;
   }
+
   .snack img{
-    
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -461,6 +454,7 @@ footer {
     font-family: 'Inter';
     font-weight: 300;
     padding: 10px 0;
+    margin-top: 100px;
 }
 footer .navbar__list a{
     color: #000;
@@ -526,7 +520,7 @@ footer .navbar__list a{
     }
     .col6{
         flex: 0 0 auto;
-        width: 50%;
+        width: 45%;
     }
     .col9 {
         width: 70%;
